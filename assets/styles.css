@@ -1,0 +1,61 @@
+/* 
+ * Estils personalitzats per a la Tasca 3 d'Arrays i Funcions
+ * Aquests estils complementen i milloren el framework Bootstrap.
+ */
+
+/* 1. Ajust del contenidor principal perquè el peu de pàgina quedi sempre abaix */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Fons gris molt suau per ressaltar les targetes blanques */
+    background-color: #f8f9fa; 
+}
+
+/* El contenidor principal ocupa l'espai lliure disponible */
+body > .container {
+    flex: 1 0 auto;
+}
+
+/* 2. Efectes per a les targetes (cards) dels exercicis 2, 3 i 4 */
+.card {
+    border: none;
+    /* Transició suau de 0.3 segons per a l'efecte de passar el ratolí */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Quan passem el ratolí per sobre d'una targeta, s'aixeca lleugerament i fa ombra */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 3. Millores a les taules on mostrem dades (Capitals, Temperatures, Acadèmia) */
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+    /* Color de fons en passar el ratolí per les files de la taula */
+    background-color: #e2e6ea; 
+}
+
+/* 4. Efecte per als enllaços del menú principal (index.php) */
+.list-group-item {
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.list-group-item:hover {
+    /* L'enllaç es mou un píxel a la dreta per donar sensació de clic */
+    transform: translateX(5px);
+    font-weight: 500;
+}
+
+/* 5. Ajust dels botons dels formularis per fer-los més agradables */
+.btn {
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
